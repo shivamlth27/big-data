@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Detection</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>COVID-19 Detection</h1>
+            <p>Upload a chest X-ray image to detect COVID-19</p>
+            <nav>
+                <a href="https://github.com/shivamlth27" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="file" id="file-input" accept=".png, .jpg, .jpeg">
+            <label for="file-input">Choose an X-ray Image</label>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="image-container"></div>
+        <div id="result"></div>
+        <div id="result-message" class="hidden"></div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 COVID-19 Detection</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
